@@ -10,6 +10,7 @@ Catch2 repo from GitHub (https://github.com/catchorg/Catch2)
 is pulled in local project skipList. Doxygen is used for project documentation.
 
 To build project and project documentation, go to root directory:
+<pre>
 $ cd root
 $ mkdir build
 $ cd build
@@ -20,7 +21,7 @@ $ make doc
 To run tests:
 $ cd test
 $ ./tests
-
+</pre>
 To check valgrind: valgrind --tool=memcheck --leak-check=full --show-leak-kinds=all ./tests
 
 GraphStoreLinked class has graph functions, which are implemented in LinkedListOfVertices class.
@@ -28,7 +29,7 @@ Class LinkedVertices has head node and vector of edges that are connected to thi
 Dijkstra algorithm is implemented.
 
 Benchmark results:
-
+<pre>
 benchmark name                       samples       iterations    estimated
                                      mean          low mean      high mean
                                      std dev       low std dev   high std dev
@@ -55,3 +56,4 @@ Find 100 shortest paths in graph of
 100.000 vertices                               100             1     2.58232 s
                                         25.7683 ms    25.7384 ms    25.8109 ms
                                         180.098 us      137.5 us    233.566 us
+</pre>
